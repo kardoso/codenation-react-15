@@ -10,6 +10,8 @@ import './FeedRoute.scss';
 const FeedRoute = () => {
   const [users, setUsers] = useState([]);
   const [stories, setStories] = useState([]);
+  const [posts, setPosts] = useState([]);
+  const [fetchedUsers, setFetchedUsers] = useState(0);
 
   // Get users
   useEffect(() => {
@@ -27,10 +29,26 @@ const FeedRoute = () => {
       });
   }, [users]);
 
+  // Get Posts
+  useEffect(() => {
+    if (fetchedUsers === users.length) {
+      return;
+    }
+
+    fetch(`https://5e7d0266a917d70016684219.mockapi.io/api/v1/users/${users[fetchedUsers].id}/posts`)
+      .then((res) => res.json())
+      .then(data => {
+        setPosts([...posts, ...data]);
+        setFetchedUsers(fetchedUsers + 1);
+        console.log(data);
+      });
+  }, [users, fetchedUsers]);
+
 
   return (
     <div>
       <Stories stories={stories} getUserHandler={(userId) => users.find(user => userId === user.id)} />
+      <Posts posts={posts} getUserHandler={(userId) => users.find(user => userId === user.id)} />
     </div>
   );
 };

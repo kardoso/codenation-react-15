@@ -47,8 +47,15 @@ const FeedRoute = () => {
 
   return (
     <div>
-      <Stories stories={stories} getUserHandler={(userId) => users.find(user => userId === user.id)} />
-      <Posts posts={posts} getUserHandler={(userId) => users.find(user => userId === user.id)} />
+      {stories.length > 0 &&
+        <Stories stories={stories} getUserHandler={(userId) => users.find(user => userId === user.id)} />
+      }
+
+      {users.length === fetchedUsers ?
+        <Posts posts={posts} getUserHandler={(userId) => users.find(user => userId === user.id)} />
+        :
+        <Loading />
+      }
     </div>
   );
 };

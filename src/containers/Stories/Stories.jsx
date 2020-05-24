@@ -5,6 +5,8 @@ import Story from '../../components/Story';
 import './Stories.scss';
 
 const Stories = ({ stories, getUserHandler }) => {
+  const [showStory, setShowStory] = useState(false);
+
   return (
     <React.Fragment>
       <section className="stories">
@@ -14,7 +16,7 @@ const Stories = ({ stories, getUserHandler }) => {
 
       {showStory && (
         <Story />
-        )}
+      )}
     </React.Fragment>
   );
 };

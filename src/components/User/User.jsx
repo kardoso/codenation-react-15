@@ -8,7 +8,7 @@ const User = ({ infoUser }) => {
   return (
     <article className="post">
       <header className="post__header">
-        <Link to={`/user/${username}`} className="user">
+        <Link to={`/users/${username}`} className="user">
           <div className="user__thumb">
             <img src={avatar} />
           </div>

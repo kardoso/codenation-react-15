@@ -10,18 +10,7 @@ const UersList = ({ users }) => {
   return (
     <section className="users-list">
       {users?.map(user => (
-        <article className="post">
-          <header className="post__header">
-            <Link to={`/user/${user.id}`} className="user">
-              <div className="user__thumb">
-                <img src={user.avatar} />
-              </div>
-              <div className="user__name">
-                {user.name}
-              </div>
-            </Link>
-          </header>
-        </article>
+        <User key={user.id} infoUser={user} />
       ))}
     </section>
   );

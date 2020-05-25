@@ -10,11 +10,10 @@ const ProfileRoute = (props) => {
   const [posts, setPosts] = useState(null);
 
   useEffect(() => {
-    let username = (props.match.params.username);
-    fetch(`https://5e7d0266a917d70016684219.mockapi.io/api/v1/users?search=${username}`)
+    fetch(`https://5e7d0266a917d70016684219.mockapi.io/api/v1/users?search=${props.match.params.username}`)
       .then(res => res.json())
       .then(data => setUser(data[0]));
-  }, []);
+  }, [props.match.params.username]);
 
   useEffect(() => {
     user &&

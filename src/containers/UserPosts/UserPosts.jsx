@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Post from '../../components/Post';
-
 import './UserPosts.scss';
 
 const UserPosts = ({ posts }) => (
@@ -20,7 +18,7 @@ const UserPosts = ({ posts }) => (
         <span className="no-posts__content">
           Este usuário ainda não publicou nada
         </span>
-        <span className="no-posts__emoji">
+        <span className="no-posts__emoji" role="img" aria-label="sad-emoji">
           🙁
         </span>
       </div>)

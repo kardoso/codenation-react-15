@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import User from '../../components/User';
 import Loading from '../../components/Loading';

@@ -41,6 +41,7 @@ const FeedRoute = () => {
         setPosts([...posts, ...data]);
         setFetchedUsers(fetchedUsers + 1);
       });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [users, fetchedUsers]);
 
 

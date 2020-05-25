@@ -9,7 +9,7 @@ const UsersRoute = () => {
     fetch('https://5e7d0266a917d70016684219.mockapi.io/api/v1/users')
       .then(res => res.json())
       .then(data => {
-        setUsers(data); console.log(data);
+        setUsers(data);
       });
   }, []);
 

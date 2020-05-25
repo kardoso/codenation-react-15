@@ -23,9 +23,9 @@ const Story = ({ story, user, handleClose }) => {
       <div className="container">
         <div className="story__header">
           <div className="user">
-            <img src={user.avatar} className="user__thumb" />
+            <img src={user?.avatar || 'https://viniciusvinna.netlify.app/assets/api-instagram/profiles/profile-placeholder.png'} className="user__thumb" />
             <div className="user__name">
-              <span>{user.name}</span>
+              <span>{user?.name}</span>
             </div>
           </div>
           <button onClick={handleClose} className="story__close">

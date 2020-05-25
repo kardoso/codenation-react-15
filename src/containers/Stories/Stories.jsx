@@ -37,7 +37,7 @@ const Stories = ({ stories, getUserHandler }) => {
                   onClick={() => handleOpenStory(story)}
                 >
                   <div className="user__thumb__wrapper">
-                    <img src={profileData?.avatar} alt={profileData?.name} />
+                    <img src={profileData?.avatar || 'https://viniciusvinna.netlify.app/assets/api-instagram/profiles/profile-placeholder.png'} alt={profileData?.name} />
                   </div>
                 </button>
               );

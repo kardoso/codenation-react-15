@@ -7,7 +7,7 @@ const UserProfile = ({ avatar, name, username }) => {
     <section className="profile">
       <article className="profile-data">
         <div className="user">
-          <img className="user__thumb" src={avatar} alt={username} />
+          <img className="user__thumb" src={avatar || 'https://viniciusvinna.netlify.app/assets/api-instagram/profiles/profile-placeholder.png'} alt={username} />
           <p className="user__name">
             {name}<span>@{username}</span>
           </p>

@@ -22,7 +22,7 @@ const Story = ({ story, user, handleClose }) => {
         <div className="story__header">
           <div className="user">
             <img src={user?.avatar || 'https://viniciusvinna.netlify.app/assets/api-instagram/profiles/profile-placeholder.png'}
-              className="user__thumb" alt={user.id} />
+              className="user__thumb" alt={user?.username || "userPhoto"} />
             <div className="user__name">
               <span>{user?.name}</span>
             </div>

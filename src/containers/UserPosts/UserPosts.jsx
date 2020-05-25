@@ -5,7 +5,7 @@ import Post from '../../components/Post';
 import './UserPosts.scss';
 
 const UserPosts = ({ posts }) => (
-  <div className="container">
+  <div className="container" data-testid="user-posts">
     {posts?.length > 0 ?
       (<section className="user-posts">
         {posts.map(post => (

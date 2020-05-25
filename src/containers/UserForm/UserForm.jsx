@@ -31,7 +31,7 @@ const UserForm = () => {
 
   return (
     <React.Fragment>
-      <section className="profile">
+      <section className="profile" data-testid="user-form">
         <article className="profile-data">
           <div className="user">
             <img

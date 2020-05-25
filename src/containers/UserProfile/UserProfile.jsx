@@ -4,7 +4,7 @@ import './UserProfile.scss';
 
 const UserProfile = ({ avatar, name, username }) => {
   return (
-    <section className="profile">
+    <section className="profile" data-testid="user-profile">
       <article className="profile-data">
         <div className="user">
           <img className="user__thumb" src={avatar || 'https://viniciusvinna.netlify.app/assets/api-instagram/profiles/profile-placeholder.png'} alt={username} />

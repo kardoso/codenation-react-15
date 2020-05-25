@@ -24,7 +24,7 @@ const Stories = ({ stories, getUserHandler }) => {
 
   return (
     <React.Fragment>
-      <section className="stories">
+      <section className="stories" data-testid="stories">
         <div className="container">
           {
             stories.map(story => {

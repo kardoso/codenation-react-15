@@ -8,7 +8,7 @@ import './UsersList.scss';
 
 const UersList = ({ users }) => {
   return (
-    <section className="users-list">
+    <section className="users-list" data-testid="user-list">
       {users ? users.map(user => (
         <User key={user.id} infoUser={user} />
       )) :

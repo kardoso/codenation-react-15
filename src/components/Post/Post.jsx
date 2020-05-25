@@ -8,7 +8,7 @@ const Post = ({ postInfo, userInfo }) => {
   const [liked, setLiked] = useState(false);
 
   return (
-    <article className="post">
+    <article className="post" data-testid="post">
       <div className="post__header">
         <div className="user">
           <Link to={`/user/${userInfo.id}`} className="user__thumb">

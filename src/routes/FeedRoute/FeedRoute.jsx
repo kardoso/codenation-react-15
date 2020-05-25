@@ -45,7 +45,7 @@ const FeedRoute = () => {
 
 
   return (
-    <div>
+    <div data-testid="feed-route">
       {stories.length > 0 &&
         <Stories stories={stories} getUserHandler={(userId) => users.find(user => userId === user.id)} />
       }

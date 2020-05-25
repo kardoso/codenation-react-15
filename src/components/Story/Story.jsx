@@ -19,7 +19,7 @@ const Story = ({ story, user, handleClose }) => {
   }, [metadata, videoCurrentTime]);
 
   return (
-    <section className="story">
+    <section className="story" data-testid="story">
       <div className="container">
         <div className="story__header">
           <div className="user">

@@ -25,7 +25,7 @@ const ProfileRoute = (props) => {
   }, [user]);
 
   return (
-    <div>
+    <div data-testid="profile-route">
       {user ? (
         <div>
           <UserProfile avatar={user.avatar} name={user.name} username={user.username} />

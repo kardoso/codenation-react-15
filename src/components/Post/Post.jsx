@@ -35,7 +35,7 @@ const Post = ({ postInfo, userInfo }) => {
         <div className="post__status">
           <div className="user">
             <span>curtido por <Link to="/">
-              {postInfo.comments[0].name}
+              {postInfo?.comments[0]?.name}
             </Link> e mais <Link to="/">{postInfo.comments.length + (liked ? 1 : 0)} pessoas</Link>.</span>
           </div>
         </div>

@@ -27,7 +27,7 @@ const Story = ({ story, user, handleClose }) => {
               <span>{user?.name}</span>
             </div>
           </div>
-          <button onClick={() => handleClose} className="story__close">
+          <button onClick={handleClose} className="story__close">
             <i className="fas fa-times"></i>
           </button>
         </div>

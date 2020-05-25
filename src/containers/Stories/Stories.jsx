@@ -33,7 +33,7 @@ const Stories = ({ stories, getUserHandler }) => {
               return (
                 <button
                   key={story.id}
-                  className={`user__thumb ${story.id == 1 && 'user__thumb--hasNew'}`}
+                  className={`user__thumb ${story.id === 1 && 'user__thumb--hasNew'}`}
                   onClick={() => handleOpenStory(story)}
                 >
                   <div className="user__thumb__wrapper">

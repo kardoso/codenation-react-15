@@ -26,7 +26,7 @@ const Post = ({ postInfo, userInfo }) => {
         </button>
       </div>
       <div className="post__figure">
-        <img src={postInfo.imageUrl} />
+        <img src={postInfo.imageUrl} alt={postInfo.id} />
       </div>
       <nav className="post__controls">
         <button className="post__control" onClick={() => setLiked(!liked)}>

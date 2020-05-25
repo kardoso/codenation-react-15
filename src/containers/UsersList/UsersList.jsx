@@ -9,9 +9,11 @@ import './UsersList.scss';
 const UersList = ({ users }) => {
   return (
     <section className="users-list">
-      {users?.map(user => (
+      {users ? users.map(user => (
         <User key={user.id} infoUser={user} />
-      ))}
+      )) :
+        (<Loading />)
+      }
     </section>
   );
 };

@@ -1,4 +1,4 @@
-# Instadev React SPA (Parte 1)
+# Instadev React SPA
 
 ## Objetivo:
 O desafio desta semana e da próxima será desenvolver um *SPA (Single Page Application)* mobile-first do **Instagram** em React, consumindo uma Rest API que deverá cumprir os seguintes critérios:
@@ -20,9 +20,21 @@ O desafio desta semana e da próxima será desenvolver um *SPA (Single Page Appl
 
 [https://github.com/codenation-dev/react-instagram](https://github.com/codenation-dev/react-instagram)
 
-## Requisitos Parte 1:
+## Requisitos Parte 1 (Desafio 15):
 * Nesta primeira parte você deverá focar apenas na componentização do projeto seguindo os padrões descritos abaixo na seção *Estrutura de Arquivos e Pastas*.
 * Não se preocupe com lógica de estados ou requisições http nesta parte, adicione os dados do usuário *hard-code*.
+
+## Requisitos Parte 2 (Desafio 16):
+Nesta segunda parte você deverá trazer o que foi implementado na parte 1 e cuidar dos estados dos componentes, das requsições HTTP de cada Rota da aplicação e dos ciclos de vida dos componentes utilizando React Hooks e abordagem funcional, os seguintes requisitos devem ser cumpridos:
+
+> * Ser desenvolvido utilizando abordagem funcional e React Hooks para gerenciamento de ciclo de vida e estados.
+> * Consumir os dados da Rest API, usando o [Fetch API](https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch) do Javascript.
+> * Exibir os **posts** de todos os usuários na rota inicial */*. 
+> * Exibir todos os **usuários** cadastrados na rota */users*
+> * Exibir o perfil do **usuário** e seus respectivos **posts** na rota */users/{username}*
+> * Exibir os **stories** dos **usuários** na rota inicial */*. 
+> * Ao clicar no ícone de **story** do **usuário** deverá abrir seu story com o respectivo vídeo e barra de progresso com a opção de fechar e voltar para o feed (rota inicial).
+> * Deve permitir cadastrar um usuário na rota */newuser* e exibir uma mensagem de alerta ao enviar.
 
 ### Estrutura de Arquivos e Pastas:
 Como já aprendemos em aula, a organização das pastas e arquivos deverá utilizar os seguintes padrões:
